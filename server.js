@@ -9,6 +9,9 @@ app.use(cors({origin:"*"}))
 app.get("/demo",async(req,res)=>{
     res.status(200).json({message:"app is running"})
 })
+app.get("/test",async(req,res)=>{
+    res.status(200).json({message:"test"})
+})
 
 app.listen(process.env.PORT,()=>{
     console.log("SERVER IS RUNNING")
